@@ -94,6 +94,8 @@ public class CityESServiceImpl implements CityService {
                 ScoreFunctionBuilders.weightFactorFunction(500))
                 .scoreMode(SCORE_MODE_SUM).setMinScore(MIN_SCORE);
 
+
+
         // 分页参数
         Pageable pageable = new PageRequest(pageNumber, pageSize);
         return new NativeSearchQueryBuilder()
