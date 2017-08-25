@@ -7,7 +7,6 @@
 	<artifactId>springboot</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
 	<modules>
 		<!-- 基础 – 入门篇 -->
 		<!-- Spring Boot 之 HelloWorld 详解 -->
@@ -30,7 +29,8 @@
 		<module>springboot-mybatis-annotation</module>
 		<!-- Spring Boot 整合 Mybatis 实现 Druid 多数据源配置 -->
 		<module>springboot-mybatis-mutil-datasource</module>
-
+		<!-- Spring Boot 整合 MongoDB 实现存储 -->
+		<module>springboot-mybatis-mongodb</module>
 		<!-- 基础 – 数据缓存篇 -->
 		<!-- Spring Boot 整合 Redis 实现缓存 -->
 		<module>springboot-mybatis-redis</module>

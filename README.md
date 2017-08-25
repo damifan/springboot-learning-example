@@ -58,7 +58,8 @@ Spring For All 社区 ⑫ 498098401 <br>
  [《Spring Boot 整合 Mybatis Annotation 注解的完整 Web 案例》](http://www.bysocket.com/?p=1811 "Spring Boot 整合 Mybatis Annotation 注解的完整 Web 案例")<br>
 - springboot-mybatis-mutil-datasource <br>
  [《Spring Boot 整合 Mybatis 实现 Druid 多数据源详解》](http://www.bysocket.com/?p=1712 "Spring Boot 整合 Mybatis 实现 Druid 多数据源详解")<br>
-
+- springboot-mybatis-mongodb <br>
+  [《Spring Boot 整合 MongoDB 实现缓存操作》](http://www.bysocket.com/?p=1756 "Spring Boot 整合 Mybatis 实现 MongoDB 数据存储详解")<br>
 
 #### d. 『 基础 – 数据缓存篇 』
 - springboot-mybatis-redis <br>

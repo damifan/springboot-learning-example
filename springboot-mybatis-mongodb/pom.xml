@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>springboot</groupId>
-    <artifactId>springboot-mybatis-redis-annotation</artifactId>
+    <artifactId>springboot-mybatis-mongodb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-mybatis-redis-annotation :: 注解实现整合 Redis 作为缓存</name>
+    <name>springboot-mybatis-mongodb :: 整合 Mybatis 并使用 MongoDB 实现存储</name>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>
@@ -18,22 +18,21 @@
     <properties>
         <mybatis-spring-boot>1.3.1</mybatis-spring-boot>
         <mysql-connector>5.1.43</mysql-connector>
-        <fastjson-version>1.2.32</fastjson-version>
+        <spring-boot-starter-mongodb-version>1.3.2.RELEASE</spring-boot-starter-mongodb-version>
     </properties>
 
     <dependencies>
 
-        <!-- Spring Boot Data Cache 依赖 -->
+        <!-- Spring Boot mongodb 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cache</artifactId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
-        <!-- Spring Boot Data Redis 依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>de.flapdoodle.embed</groupId>-->
+            <!--<artifactId>de.flapdoodle.embed.mongo</artifactId>-->
+        <!--</dependency>-->
 
         <!-- Spring Boot Web 依赖 -->
         <dependency>
@@ -46,6 +45,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Boot Mybatis 依赖 -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis-spring-boot}</version>
+        </dependency>
+
+        <!-- MySQL 连接驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector}</version>
         </dependency>
 
         <!-- Junit -->
